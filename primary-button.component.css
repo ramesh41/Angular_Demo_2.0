@@ -1,0 +1,14 @@
+.button{
+  color: #fff;
+  border: 2px solid #5cb85c;
+  background-color: #5cb85c;
+  box-shadow: 0px 7px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  padding: 1em 2em;
+  line-height: 1;
+  margin: 10px 0;
+}
+/*.button :focus{
+  box-shadow: inset 0px 7px 12px rgba(0, 0, 0, 0.2);
+}*/
+

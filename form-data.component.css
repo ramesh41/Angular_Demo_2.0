@@ -1,0 +1,82 @@
+
+
+.form-container {
+  width: 100%;
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.form-container input {
+  height: 40px;
+  border-radius: 0;
+}
+
+.error-message span {
+  font-size: 17px;
+}
+
+.error-message {
+  margin: 5px 0;
+  color: #a94442;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  background: #42A948;
+  border-radius: 0;
+  color: white;
+}
+button:hover,
+button:focus,
+button:active {
+  color: white;
+  background: #42A948;
+  -webkit-box-shadow:inset 0px 0px 85px rgba(0,0,0,.5);
+}
+
+ng-pristine:not(form),
+ng-untouched:not(form),
+ng-dirty:not(form), .ng-invalid:not(form) {
+  border: 1px solid #a94442;
+  border-left: 8px solid #a94442;
+}
+
+input.ng-valid {
+  border: 1px solid #42A948;
+  border-left: 8px solid #42A948;
+}
+
+
+.trash {
+  margin: 0 3px;
+  cursor: pointer;
+  padding: 7px;
+  color: #fff;
+  background: rgb(209, 91, 71);
+  font-size: 11px;
+  border-radius: 50%;
+}
+.pencil {
+  margin: 0 3px;
+  cursor: pointer;
+  padding: 7px;
+  color: #fff;
+  background: #42A948;
+  font-size: 11px;
+  border-radius: 50%;
+}
+.panel-primary,.panel-heading{
+  border-radius: 0;
+}
+.panel-body{
+  padding: 10px;
+}
+.panel-body:nth-child(even){
+  background: aliceblue;
+  border: 1px solid #dddddd;
+
+}
+
+

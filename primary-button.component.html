@@ -1,0 +1,11 @@
+<div class="button-container">
+  <button class="fill button"
+         [type]="buttonType"
+         [id]="buttonId"
+         [value]="buttonText"
+         [attr.role]="buttonRole"
+         [name]="buttonName"
+         [disabled]="buttonDisabled">
+    <i *ngIf="spinnerObj" class="fa fa-spinner fa-spin" style="font-size:18px;padding-right: 3px;"></i> {{buttonNameTitle}}
+  </button>
+</div>

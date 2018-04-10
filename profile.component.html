@@ -1,0 +1,77 @@
+<div class="container" *ngIf="userInfo">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h4>User Profile</h4></div>
+        <div class="panel-body">
+          <div class="box box-info">
+            <div class="box-body">
+              <div class="col-sm-12">
+                <div align="center">
+                  <img alt="User Pic" src="{{userInfo.avatar_url}}" id="profile-image1" class="img-circle img-responsive">
+                  <input id="profile-image-upload" class="hidden" type="file">
+                  <h3 style="color:#00b1b1;">{{userInfo.name}} </h3>
+                  <span><label>Employee Id : {{userInfo.id}}</label></span>
+                </div>
+                <br>
+              </div>
+              <div class="clearfix"></div>
+              <hr style="margin:5px 0 5px 0;">
+              <div class="col-sm-5 col-xs-6 tital ">First Name:</div>
+              <div class="col-sm-7 col-xs-6 "><label>{{userInfo.name}}</label></div>
+              <div class="clearfix"></div>
+              <div class="bot-border"></div>
+
+              <div class="col-sm-5 col-xs-6 tital ">company</div>
+              <div class="col-sm-7"> <label>{{userInfo.company}}</label></div>
+              <div class="clearfix"></div>
+              <div class="bot-border"></div>
+
+              <div class="col-sm-5 col-xs-6 tital ">Location</div>
+              <div class="col-sm-7"> <label>{{userInfo.location}}</label></div>
+              <div class="clearfix"></div>
+              <div class="bot-border"></div>
+
+              <div class="col-sm-5 col-xs-6 tital ">Github URL</div>
+              <div class="col-sm-7"> <label>{{userInfo.url}}</label></div>
+              <div class="clearfix"></div>
+              <div class="bot-border"></div>
+
+              <div class="col-sm-5 col-xs-6 tital ">Types of Users</div>
+              <div class="col-sm-7">
+                <label *ngIf="userInfo.site_admin==true">Supper Admin</label>
+                <label *ngIf="userInfo.site_admin==false">Sub Admin</label>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="bot-border"></div>
+
+
+              <div class="col-sm-5 col-xs-6 tital ">followers</div>
+              <div class="col-sm-7"><label>{{userInfo.followers}}</label></div>
+
+              <div class="clearfix"></div>
+              <div class="bot-border"></div>
+
+              <div class="col-sm-5 col-xs-6 tital ">following</div>
+              <div class="col-sm-7"><label>{{userInfo.following}}</label></div>
+
+              <div class="clearfix"></div>
+              <div class="bot-border"></div>
+
+              <div class="col-sm-5 col-xs-6 tital ">Profile created Date</div>
+              <div class="col-sm-7"><label>{{userInfo.created_at | date:'MM/dd/yyyy, h:mm a'}}</label></div>
+
+              <div class="clearfix"></div>
+              <div class="bot-border"></div>
+
+              <div class="col-sm-5 col-xs-6 tital ">Profile updated Date</div>
+              <div class="col-sm-7"><label>{{userInfo.updated_at | date:'MM/dd/yyyy, h:mm a'}}</label></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
